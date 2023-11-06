@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+
+
+{% block  title %}
+
+{% endblock %}
+
+
+
+
+{% block  content %}
+
+<div class="row mb-2">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Клиент</h5>
+                <hr>
+                <a class="btn btn-outline-info btn-block mb-2" href="#" >Обновить информацию о клиентах</a>
+                <a class="btn btn-outline-danger btn-block mb-2" href="#">Удалить клиента</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Контактная информация</h5>
+                <hr>
+                <p>Электронная почта:</p>
+                <p>Телефон:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Общее количество заказов</h5>
+                <hr>
+                <h1 class="text-center" style="padding: 10px;"></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <form method="get">
+                    <button class="btn btn-primary" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md">
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Продукт</th>
+                            <th>Категория</th>
+                            <th>По дате</th>
+                            <th>Статус</th>
+                            <th>Обновление</th>
+                            <th>Удалить</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
